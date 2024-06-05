@@ -1,4 +1,5 @@
 import css from './pages/cssLinks.html';
+import layout from './pages/layout.html';
 import jsLinks from './pages/jsLinks.html';
 import homePage from './pages/homePage.html';
 import workPage from './pages/workPage.html';
@@ -10,6 +11,7 @@ import { showSelectedPage } from './scripts/switchPage.js';
 document.addEventListener('DOMContentLoaded', () => {
   console.log('test nuevo');
   document.querySelector('head').innerHTML += css;
+  document.querySelector('body').innerHTML += layout;
   document.getElementById('home-div').innerHTML = homePage;
   document.getElementById('work-div').innerHTML = workPage;
   document.getElementById('project-div').innerHTML = projectPage;
