@@ -2,7 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  mode: 'development', // Set the mode to 'development' or 'production'
+  mode: 'production', // Set the mode to 'development' or 'production'
   entry: './src/entryPointAdri.js',
   output: {
     filename: 'bundledAdri.js',
