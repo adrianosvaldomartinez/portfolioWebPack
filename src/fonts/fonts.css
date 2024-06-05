@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Ligconsolata Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Ligconsolata Regular'), url('Ligconsolata-Regular.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Ligconsolata Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Ligconsolata Bold'), url('Ligconsolata-Bold.woff') format('woff');
+    }

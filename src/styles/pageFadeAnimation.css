@@ -1,0 +1,30 @@
+.visible {
+  position: relative;
+  animation: fade_in_show 1s;
+  z-index: 2;
+}
+
+@keyframes fade_in_show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.hidden {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: -2;
+  /* same measure as mi hight dropdown class */
+  top: var(--top-menu-height-mobile);
+}
+
+@media (min-width: 901px) {
+  .hidden {
+    top: var(--top-menu-height-desktop);
+  }
+}

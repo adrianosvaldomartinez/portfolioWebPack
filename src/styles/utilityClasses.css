@@ -1,0 +1,74 @@
+/* Base styles for mobile */
+
+.two-columns {
+  grid-column-start: span 2;
+}
+
+.fontMedium {
+  font-size: 16px;
+  font-family: Ligconsolata;
+}
+
+.fontMediumBold {
+  font-size: 16px;
+  font-family: Ligconsolata Bold;
+}
+
+.fontBigBold {
+  font-size: 24px;
+  font-family: Ligconsolata Bold;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .sm\:span-columns-1 {
+    grid-column: span 1;
+  }
+
+  .sm\:span-columns-2 {
+    grid-column: span 2;
+  }
+
+  .sm\:mt-normal {
+    margin-top: 10px;
+  }
+  .sm\:mt-large {
+    margin-top: 20px;
+  }
+
+  /* Add more as needed */
+}
+/* Styles for large screens */
+@media (min-width: 901px) {
+  .fontSmall {
+    font-size: 28px;
+  }
+
+  .fontMedium {
+    font-size: 32px;
+  }
+
+  .fontMediumBold {
+    font-size: 32px;
+  }
+
+  .fontBigBold {
+    font-size: 48px;
+  }
+  .lg\:span-columns-1 {
+    grid-column: span 1;
+  }
+
+  .lg\:span-columns-2 {
+    grid-column: span 2;
+  }
+  .lg\:mt-normal {
+    margin-top: 15px;
+  }
+  .lg\:mt-large {
+    margin-top: 35px;
+  }
+}

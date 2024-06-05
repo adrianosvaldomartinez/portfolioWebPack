@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width =device-width" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../dist/stylesBundledAdri.css" />
+  </head>
+  <body>
+    <h1>index</h1>
+    <div class="layout">
+      <div class="dropdown">
+        <button class="dropdown-toggle oldStyle">
+          <img width="40px" src="../images/hamburger-menu.svg" alt="" />
+        </button>
+        <div class="dropdown-content hidde-menu-content">
+          <button class="switch-page-button" data-target="home-div">
+            Home
+          </button>
+          <button class="switch-page-button" data-target="work-div">
+            work
+          </button>
+          <button class="switch-page-button" data-target="project-div">
+            project
+          </button>
+          <button class="switch-page-button" data-target="personal-div">
+            personal
+          </button>
+        </div>
+      </div>
+      <div id="home-div" class="page container-intro visible"></div>
+      <div id="work-div" class="page container-work hidden"></div>
+      <div id="project-div" class="page container-projects hidden">
+        <h1>Project div</h1>
+        <button class="switch-page-button" data-target="personal-div">
+          personal.. ->
+        </button>
+      </div>
+
+      <div id="personal-div" class="page container-personal hidden">
+        <h1>Personal div</h1>
+        <button class="switch-page-button" data-target="home-div">
+          go back home.. ->
+        </button>
+      </div>
+      <script type="module" src="../scripts/main.js"></script>
+      <script
+        type="module"
+        src="../scripts/scriptBackgroundAnimation.js"
+      ></script>
+      <script type="module" src="../scripts/switchPage.js"></script>
+    </div>
+  </body>
+  <script src="../dist/bundledAdri.js"></script>
+</html>

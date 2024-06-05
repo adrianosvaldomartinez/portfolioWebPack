@@ -1,0 +1,122 @@
+:root {
+  --default-margin: 5px;
+  --top-menu-height-mobile: 30px;
+  --top-menu-height-desktop: 60px;
+}
+* {
+  box-sizing: border-box;
+
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  margin-top: 16px;
+  background-color: #eef1f9;
+  display: flex;
+  justify-content: center;
+}
+.layout {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 600px;
+}
+.page {
+  display: grid;
+  min-width: 312;
+  width: 90%;
+}
+
+.container-intro {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.intro-1 {
+  margin-left: 15%;
+}
+.intro-2 {
+  margin-left: 40%;
+}
+
+.presentation {
+  margin-left: 15%;
+}
+.position {
+  margin-left: 30%;
+}
+.myself-3 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.image-developer {
+  display: flex;
+  justify-content: center;
+}
+.image-developer img {
+  border-radius: 50%;
+  width: 150px;
+}
+
+.bullet-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.engranaje {
+  max-width: 60%;
+}
+
+.more {
+  text-align: center;
+}
+.flex-first-bullet {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.flex-2-thirds-space {
+  flex: 2;
+}
+.flex-1-third-space {
+  flex: 1;
+}
+
+@media (min-width: 900px) {
+  body {
+    font-size: 20px;
+  }
+  .layout {
+    width: 90vw;
+    display: flex;
+    max-width: 1200px;
+    flex-direction: column;
+    position: relative;
+  }
+  .page {
+    min-width: 312;
+    width: 90%;
+  }
+
+  .container-intro {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    max-width: 1200px;
+  }
+
+  .image-developer {
+    grid-column: 2;
+    grid-row: 1 / span 4; /* Occupies rows 1 to 4 */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-developer img {
+    width: 250px;
+    height: auto; /* Maintain aspect ratio */
+  }
+}
