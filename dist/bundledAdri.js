@@ -20,13 +20,33 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/pages/personalPage.html":
+/*!*************************************!*\
+  !*** ./src/pages/personalPage.html ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<h1>Personal div</h1>\\n<button class=\\\"switch-page-button\\\" data-target=\\\"home-div\\\">\\n  go back home.. ->\\n</button>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack://portfoliowebpack/./src/pages/personalPage.html?");
+
+/***/ }),
+
+/***/ "./src/pages/projectPage.html":
+/*!************************************!*\
+  !*** ./src/pages/projectPage.html ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<h1>Project div</h1>\\n<button class=\\\"switch-page-button\\\" data-target=\\\"personal-div\\\">\\n  personal.. ->\\n</button>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack://portfoliowebpack/./src/pages/projectPage.html?");
+
+/***/ }),
+
 /***/ "./src/pages/workPage.html":
 /*!*********************************!*\
   !*** ./src/pages/workPage.html ***!
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<h1>work div!!</h1>\\n<button class=\\\"switch-page-button\\\" data-target=\\\"project-div\\\">\\n  projects.. -> ALOHA\\n</button>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack://portfoliowebpack/./src/pages/workPage.html?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<h1>work div!!</h1>\\n<button class=\\\"switch-page-button\\\" data-target=\\\"project-div\\\">\\n  projects.. ->\\n</button>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack://portfoliowebpack/./src/pages/workPage.html?");
 
 /***/ }),
 
@@ -46,7 +66,7 @@ eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    // 
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pages_homePage_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pages/homePage.html */ \"./src/pages/homePage.html\");\n/* harmony import */ var _pages_workPage_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/workPage.html */ \"./src/pages/workPage.html\");\n/* harmony import */ var _scripts_scriptBackgroundAnimation_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scripts/scriptBackgroundAnimation.js */ \"./src/scripts/scriptBackgroundAnimation.js\");\n/* harmony import */ var _scripts_switchPage_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./scripts/switchPage.js */ \"./src/scripts/switchPage.js\");\n\n\n\n\n\ndocument.addEventListener('DOMContentLoaded', () => {\n  console.log('test nuevo');\n  document.getElementById('home-div').innerHTML = _pages_homePage_html__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n  document.getElementById('work-div').innerHTML = _pages_workPage_html__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\n\n  const switchPagebuttons = document.querySelectorAll('.switch-page-button');\n  const animationDuration = 1; // Duration in seconds\n\n  // añadimos un listener on click a cada boton de cambio de pagina\n  // para animacion\n  // para mostrar pagina adecuada\n  switchPagebuttons.forEach((pageSelectedButton) => {\n    pageSelectedButton.addEventListener('click', () => {\n      (0,_scripts_scriptBackgroundAnimation_js__WEBPACK_IMPORTED_MODULE_2__.animateBackground)({\n        pageSelectedButton,\n        animationDuration,\n      });\n\n      (0,_scripts_switchPage_js__WEBPACK_IMPORTED_MODULE_3__.showSelectedPage)({ pageSelectedButton, animationDuration });\n    });\n  });\n\n  const menuButton = document.querySelector('.dropdown-toggle');\n  const menuContent = document.querySelector('.dropdown-content');\n  menuButton.addEventListener('click', () => {\n    console.log('clicke on menu');\n    menuContent.classList.toggle('hidde-menu-content');\n  });\n});\n\n\n//# sourceURL=webpack://portfoliowebpack/./src/entryPointAdri.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pages_homePage_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pages/homePage.html */ \"./src/pages/homePage.html\");\n/* harmony import */ var _pages_workPage_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/workPage.html */ \"./src/pages/workPage.html\");\n/* harmony import */ var _pages_projectPage_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/projectPage.html */ \"./src/pages/projectPage.html\");\n/* harmony import */ var _pages_personalPage_html__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/personalPage.html */ \"./src/pages/personalPage.html\");\n/* harmony import */ var _scripts_scriptBackgroundAnimation_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./scripts/scriptBackgroundAnimation.js */ \"./src/scripts/scriptBackgroundAnimation.js\");\n/* harmony import */ var _scripts_switchPage_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./scripts/switchPage.js */ \"./src/scripts/switchPage.js\");\n\n\n\n\n\n\n\ndocument.addEventListener('DOMContentLoaded', () => {\n  console.log('test nuevo');\n  document.getElementById('home-div').innerHTML = _pages_homePage_html__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n  document.getElementById('work-div').innerHTML = _pages_workPage_html__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\n  document.getElementById('project-div').innerHTML = _pages_projectPage_html__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\n  document.getElementById('personal-div').innerHTML = _pages_personalPage_html__WEBPACK_IMPORTED_MODULE_3__[\"default\"];\n\n  const switchPagebuttons = document.querySelectorAll('.switch-page-button');\n  const animationDuration = 1; // Duration in seconds\n\n  // añadimos un listener on click a cada boton de cambio de pagina\n  // para animacion\n  // para mostrar pagina adecuada\n  switchPagebuttons.forEach((pageSelectedButton) => {\n    pageSelectedButton.addEventListener('click', () => {\n      (0,_scripts_scriptBackgroundAnimation_js__WEBPACK_IMPORTED_MODULE_4__.animateBackground)({\n        pageSelectedButton,\n        animationDuration,\n      });\n\n      (0,_scripts_switchPage_js__WEBPACK_IMPORTED_MODULE_5__.showSelectedPage)({ pageSelectedButton, animationDuration });\n    });\n  });\n\n  const menuButton = document.querySelector('.dropdown-toggle');\n  const menuContent = document.querySelector('.dropdown-content');\n  menuButton.addEventListener('click', () => {\n    console.log('clicke on menu');\n    menuContent.classList.toggle('hidde-menu-content');\n  });\n});\n\n\n//# sourceURL=webpack://portfoliowebpack/./src/entryPointAdri.js?");
 
 /***/ }),
 

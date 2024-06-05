@@ -1,5 +1,7 @@
 import homePage from './pages/homePage.html';
 import workPage from './pages/workPage.html';
+import projectPage from './pages/projectPage.html';
+import personalPage from './pages/personalPage.html';
 import { animateBackground } from './scripts/scriptBackgroundAnimation.js';
 import { showSelectedPage } from './scripts/switchPage.js';
 
@@ -7,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('test nuevo');
   document.getElementById('home-div').innerHTML = homePage;
   document.getElementById('work-div').innerHTML = workPage;
+  document.getElementById('project-div').innerHTML = projectPage;
+  document.getElementById('personal-div').innerHTML = personalPage;
 
   const switchPagebuttons = document.querySelectorAll('.switch-page-button');
   const animationDuration = 1; // Duration in seconds
