@@ -1,6 +1,6 @@
 .visible {
   position: relative;
-  animation: fade_in_show 1s;
+  animation: fade_in_show 0.25s;
   z-index: 2;
 }
 
@@ -17,7 +17,7 @@
 .hidden {
   position: absolute;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
   z-index: -2;
   /* same measure as mi hight dropdown class */
   top: var(--top-menu-height-mobile);

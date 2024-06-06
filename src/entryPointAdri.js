@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('body').innerHTML += jsLinks;
 
   const switchPagebuttons = document.querySelectorAll('.switch-page-button');
-  const animationDuration = 1; // Duration in seconds
+  const animationDuration = 0.25; // Duration in seconds
 
   // añadimos un listener on click a cada boton de cambio de pagina
   // para animacion
