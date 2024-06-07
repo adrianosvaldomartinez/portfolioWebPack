@@ -62,9 +62,14 @@ body {
   width: 150px;
 }
 
-.bullet-div {
+.flex-single-cell-start {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex-single-cell-end {
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
 }
 .engranaje {
@@ -74,7 +79,7 @@ body {
 .more {
   text-align: center;
 }
-.flex-first-bullet {
+.flex-row {
   display: flex;
   flex-direction: row;
   text-align: center;

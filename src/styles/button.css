@@ -1,39 +1,8 @@
 /* CSS */
-.switch-page-button {
-  background-image: linear-gradient(#42a1ec, #0070c9);
-  border: 1px solid #0077cc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  color: #ffffff;
-  cursor: pointer;
-  direction: ltr;
-  display: block;
-  font-family: 'SF Pro Text', 'SF Pro Icons', 'AOS Icons', 'Helvetica Neue',
-    Helvetica, Arial, sans-serif;
-  font-size: 17px;
-  font-weight: 400;
-  letter-spacing: -0.022em;
-  line-height: 1.47059;
-  min-width: 30px;
-  overflow: visible;
-  padding: 4px 15px;
-  text-align: center;
-  vertical-align: baseline;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-}
 
 .switch-page-button:disabled {
   cursor: default;
   opacity: 0.3;
-}
-
-.switch-page-button:hover {
-  background-image: linear-gradient(#51a9ee, #147bcd);
-  border-color: #1482d0;
-  text-decoration: none;
 }
 
 .switch-page-button:active {
@@ -124,7 +93,33 @@
   z-index: 3;
 }
 
-.dropdown-content button {
+.switch-page-button {
+  background-image: linear-gradient(#42a1ec, #0070c9);
+  border: 1px solid #0077cc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  direction: ltr;
+  display: block;
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'AOS Icons', 'Helvetica Neue',
+    Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  line-height: 1.47059;
+  min-width: 30px;
+  overflow: visible;
+  padding: 4px 15px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.dropdown-buttons {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -135,9 +130,6 @@
   text-align: left;
 }
 
-/* .dropdown:focus-within .dropdown-content {
-  visibility: visible;
-} */
 .hidde-menu-content {
   visibility: hidden;
 }
@@ -148,9 +140,15 @@
 @media (min-width: 901px) {
   .dropdown {
     height: var(--top-menu-height-desktop);
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 15%;
   }
+
   .dropdown-toggle {
-    visibility: hidden;
+    display: none;
   }
 
   .dropdown-content {
@@ -158,16 +156,15 @@
     visibility: visible;
     display: flex;
     flex-direction: row;
-    margin-top: 0px;
-    right: 0px;
+    z-index: 3;
+    background-color: transparent;
+    box-shadow: none;
   }
 
   .switch-page-button {
-    border-radius: 4px;
-    box-sizing: border-box;
     cursor: pointer;
     direction: ltr;
-    display: block;
+    display: flex;
     font-family: 'SF Pro Text', 'SF Pro Icons', 'AOS Icons', 'Helvetica Neue',
       Helvetica, Arial, sans-serif;
     font-size: 17px;
@@ -180,13 +177,15 @@
     -webkit-user-select: none;
     touch-action: manipulation;
     white-space: nowrap;
+    font-weight: bold;
   }
-  .dropdown-content {
-    right: 1px;
-    position: absolute;
-    min-width: 160px;
-    z-index: 3;
-    background-color: transparent;
-    box-shadow: none;
+
+  .dropdown-buttons {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    border-style: double;
+    border-width: 2px;
+    border-color: black;
   }
 }
