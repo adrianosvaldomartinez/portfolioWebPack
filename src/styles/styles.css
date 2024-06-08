@@ -10,7 +10,8 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
   background: #f0f0f0;
   margin-top: 16px;
   background-color: #eef1f9;

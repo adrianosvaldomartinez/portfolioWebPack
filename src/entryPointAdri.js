@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  const menuButton = document.querySelector('[data-js="dropdown-toggle]');
-  const menuContent = document.querySelector('data-js="dropdown-content"');
+  const menuButton = document.querySelector('[data-js="dropdown-toggle"]');
+  const menuContent = document.querySelector('[data-js="dropdown-content"]');
   menuButton.addEventListener('click', () => {
     console.log('clicke on menu');
     menuContent.classList.toggle('hidde-menu-content');

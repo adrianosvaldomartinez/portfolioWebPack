@@ -161,31 +161,9 @@
     box-shadow: none;
   }
 
-  .switch-page-button {
-    cursor: pointer;
-    direction: ltr;
-    display: flex;
-    font-family: 'SF Pro Text', 'SF Pro Icons', 'AOS Icons', 'Helvetica Neue',
-      Helvetica, Arial, sans-serif;
-    font-size: 17px;
-    font-weight: 400;
-    letter-spacing: -0.022em;
-    line-height: 1.47059;
-    overflow: visible;
-    text-align: center;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
-    font-weight: bold;
-  }
-
   .dropdown-buttons {
     text-align: center;
     color: black;
     text-decoration: none;
-    border-style: double;
-    border-width: 2px;
-    border-color: black;
   }
 }
