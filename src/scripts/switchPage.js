@@ -1,5 +1,7 @@
 export function showSelectedPage({ pageSelectedButton, animationDuration }) {
-  const dropdownContent = document.querySelector('.dropdown-content');
+  const dropdownContent = document.querySelector(
+    '[data-js="dropdown-content"]'
+  );
   const targetDivId = pageSelectedButton.getAttribute('data-target');
   const allPages = document.querySelectorAll('.page');
   dropdownContent.classList.add('hidde-menu-content');

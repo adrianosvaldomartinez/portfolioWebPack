@@ -18,7 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('personal-div').innerHTML = personalPage;
   document.querySelector('body').innerHTML += jsLinks;
 
-  const switchPagebuttons = document.querySelectorAll('.switch-page-button');
+  const switchPagebuttons = document.querySelectorAll(
+    '[data-js="switch-page"]'
+  );
   const animationDuration = 0.25; // Duration in seconds
 
   // añadimos un listener on click a cada boton de cambio de pagina
@@ -35,8 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  const menuButton = document.querySelector('.dropdown-toggle');
-  const menuContent = document.querySelector('.dropdown-content');
+  const menuButton = document.querySelector('[data-js="dropdown-toggle]');
+  const menuContent = document.querySelector('data-js="dropdown-content"');
   menuButton.addEventListener('click', () => {
     console.log('clicke on menu');
     menuContent.classList.toggle('hidde-menu-content');
