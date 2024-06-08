@@ -84,6 +84,22 @@ body {
   text-align: center;
 }
 
+.flex-row-icons {
+  justify-self: center;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.footer-icon {
+  width: 50px;
+}
+
+.icons {
+  justify-content: space-around;
+  width: 90%;
+}
+
 @media (min-width: 900px) {
   body {
     font-size: 20px;
@@ -94,6 +110,7 @@ body {
     max-width: 1200px;
     flex-direction: column;
     position: relative;
+    align-items: center;
   }
   .page {
     min-width: 312;
@@ -121,11 +138,22 @@ body {
     width: 60%;
   }
 
+  .flex-row-icons {
+    width: 100%;
+  }
+
+  .icons {
+    justify-content: space-evenly;
+  }
+
   .intro-2 {
     margin-left: 15%;
   }
 
   .presentation {
     margin-left: 20%;
+  }
+  .footer-icon {
+    width: 50px;
   }
 }
