@@ -80,12 +80,12 @@
 }
 
 .dropdown-toggle {
-  margin-bottom: 0px;
+  right: 15vw;
 }
 
 .dropdown-content {
-  right: 1px;
-
+  right: 15vw;
+  top: 25px;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;

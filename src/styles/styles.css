@@ -19,16 +19,17 @@ body {
   justify-content: center;
 }
 .layout {
-  width: 90vw;
+  position: relative;
   display: flex;
   flex-direction: column;
-  position: relative;
-  max-width: 600px;
+  align-items: center;
+  width: 100vw;
 }
 .page {
   display: grid;
+  max-width: 600px;
   min-width: 312;
-  width: 90%;
+  width: 80vw;
 }
 
 .container-intro {
@@ -97,7 +98,7 @@ body {
 
 .icons {
   justify-content: space-around;
-  width: 90%;
+  width: 100%;
   position: absolute;
   padding: 20px;
   bottom: 0px;
@@ -109,17 +110,10 @@ body {
   body {
     font-size: 20px;
   }
-  .layout {
-    width: 90vw;
-    display: flex;
-    max-width: 1200px;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-  }
+
   .page {
     min-width: 312;
-    width: 90%;
+    max-width: 1200px;
   }
 
   .container-intro {
