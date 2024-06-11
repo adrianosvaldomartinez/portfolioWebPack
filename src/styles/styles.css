@@ -112,7 +112,7 @@ body {
   height: 1px;
   width: 80%;
   background: #333; /* Color of the line */
-  margin: 20px auto; /* Space above and below the line */
+  margin: 40px auto; /* Space above and below the line */
 }
 
 @media (min-width: 900px) {

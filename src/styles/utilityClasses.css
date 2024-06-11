@@ -22,6 +22,15 @@
 .bold {
   font-weight: bold;
 }
+.text-shadow {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow to the text */
+}
+.box-shadow {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow to the text */
+}
+.underline {
+  text-decoration: underline;
+}
 
 @media (max-width: 900px) {
   .sm\:span-columns-1 {

@@ -1,5 +1,13 @@
 .flexContainerWorkPage {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  margin-top: 5%;
+}
+
+.centered {
+  display: block;
+  text-align: center;
+  width: 100%;
 }
