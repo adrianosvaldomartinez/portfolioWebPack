@@ -42,5 +42,16 @@ document.addEventListener('DOMContentLoaded', () => {
   menuButton.addEventListener('click', () => {
     console.log('clicke on menu');
     menuContent.classList.toggle('hidde-menu-content');
+    const closeMenuOnClickOutside = (event) => {
+      if (
+        !menuContent.contains(event.target) &&
+        !menuButton.contains(event.target)
+      ) {
+        menuContent.classList.add('hidde-menu-content');
+        menuContent.classList.remove('show-menu-content');
+        document.body.removeEventListener('click', closeMenuOnClickOutside);
+      }
+    };
+    document.body.addEventListener('click', closeMenuOnClickOutside);
   });
 });
