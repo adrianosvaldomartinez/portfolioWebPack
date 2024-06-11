@@ -114,6 +114,9 @@ body {
   background: #333; /* Color of the line */
   margin: 40px auto; /* Space above and below the line */
 }
+.space {
+  height: 20px;
+}
 
 @media (min-width: 900px) {
   body {

@@ -4,6 +4,7 @@ import jsLinks from './pages/jsLinks.html';
 import homePage from './pages/homePage.html';
 import workPage from './pages/workPage.html';
 import projectPage from './pages/projectPage.html';
+import skillsPage from './pages/skillsPage.html';
 import personalPage from './pages/personalPage.html';
 import { animateBackground } from './scripts/scriptBackgroundAnimation.js';
 import { showSelectedPage } from './scripts/switchPage.js';
@@ -15,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('home-div').innerHTML = homePage;
   document.getElementById('work-div').innerHTML = workPage;
   document.getElementById('project-div').innerHTML = projectPage;
+  document.getElementById('skills-div').innerHTML = skillsPage;
   document.getElementById('personal-div').innerHTML = personalPage;
   document.querySelector('body').innerHTML += jsLinks;
 
