@@ -30,6 +30,8 @@ body {
   max-width: 600px;
   min-width: 312;
   width: 80vw;
+  /* añadimos por que tenemso el footer fixed, de lo contrario tapa el contenido de page */
+  padding-bottom: 150px;
 }
 
 .container-intro {
@@ -99,7 +101,7 @@ body {
 .icons {
   justify-content: space-around;
   width: 100%;
-  position: absolute;
+  position: fixed;
   padding: 40px;
   bottom: 0px;
   z-index: 1000;
