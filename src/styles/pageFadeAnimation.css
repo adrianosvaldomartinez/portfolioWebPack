@@ -16,6 +16,8 @@
 
 .hidden {
   position: absolute;
+  /* is the transfor is not there, there is space occupied by the children that have position set other than absolute */
+  transform: scale(0);
   opacity: 0;
   transition: opacity 0.25s ease-in-out;
   z-index: -2;

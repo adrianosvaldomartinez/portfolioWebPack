@@ -106,6 +106,10 @@ body {
   z-index: 1000;
   background-color: white;
 }
+.filler-for-stikcy {
+  min-height: 160px;
+  min-width: 100vw;
+}
 .divisory-line {
   border: 0;
   height: 1px;
