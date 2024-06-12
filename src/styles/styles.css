@@ -28,10 +28,9 @@ body {
 .page {
   display: grid;
   max-width: 600px;
-  min-width: 312;
+  min-width: 312px;
   width: 80vw;
   /* añadimos por que tenemso el footer fixed, de lo contrario tapa el contenido de page */
-  padding-bottom: 150px;
 }
 
 .container-intro {
