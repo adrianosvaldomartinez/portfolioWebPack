@@ -59,10 +59,18 @@ body {
 .image-developer {
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 }
-.image-developer img {
+.image-adrian-big {
+  display: none;
+}
+.image-adrian-small {
+  display: block;
+  background-image: url('../images/adri-montaña-small.png');
+  background-size: cover;
+  width: 250px;
+  height: 250px;
   border-radius: 15%;
-  width: 50%;
 }
 
 .flex-single-cell-start {
@@ -140,15 +148,22 @@ body {
   .image-developer {
     grid-column: 2;
     grid-row: 1 / span 4; /* Occupies rows 1 to 4 */
-    justify-content: center;
-    align-items: center;
+    padding-top: 30px;
+    padding-left: 20px;
   }
-
-  .image-developer img {
-    width: 300px;
+  .image-adrian-small {
+    display: none;
+  }
+  .image-adrian-big {
+    display: block;
+    background-size: cover;
+    background-image: url('../images/adri-montaña-big.png');
+    background-position: center;
+    width: 100%;
     height: auto; /* Maintain aspect ratio */
+    border-radius: 15%;
   }
-  .flex-row {
+  */ .flex-row {
     width: 60%;
   }
 
