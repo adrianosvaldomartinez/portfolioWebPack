@@ -27,3 +27,28 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5%;
 }
+
+.skills-table {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills-table th,
+.skills-table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.skills-table th {
+  background-color: #1a628b;
+  color: white;
+}
+
+.skills-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
