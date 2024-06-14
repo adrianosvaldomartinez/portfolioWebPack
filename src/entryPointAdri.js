@@ -8,7 +8,7 @@ import skillsPage from './pages/skillsPage.html';
 import personalPage from './pages/personalPage.html';
 import { animateBackground } from './scripts/scriptBackgroundAnimation.js';
 import { showSelectedPage } from './scripts/switchPage.js';
-
+import Swiper from 'swiper/bundle';
 document.addEventListener('DOMContentLoaded', () => {
   console.log('test nuevo');
   document.querySelector('head').innerHTML += css;
@@ -55,5 +55,27 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     };
     document.body.addEventListener('click', closeMenuOnClickOutside);
+  });
+
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    autoplay: {
+      delay: 3000,
+    },
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
   });
 });

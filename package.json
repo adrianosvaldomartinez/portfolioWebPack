@@ -11,7 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "html-loader": "^5.0.0"
+    "html-loader": "^5.0.0",
+    "swiper": "^11.1.4"
   },
   "devDependencies": {
     "css-loader": "^7.1.2",

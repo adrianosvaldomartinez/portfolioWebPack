@@ -7,6 +7,11 @@
   text-align: center;
 }
 
+.swiper {
+  width: 70vw;
+  height: auto;
+}
+
 .centered {
   display: block;
   text-align: center;

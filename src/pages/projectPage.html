@@ -1,11 +1,97 @@
 <div class="flex-Container-alternative-page">
   <p class="fontBigBold text-shadow underline">Projects</p>
   <p class="fontMediumBold">
-    Since the projects I have worked on are not open source, I have built and
-    hosted some projects on GitHub to publicly showcase my skills.
+    Since the projects I have worked on are not open source, I have built some
+    projects to showcase my skills.
   </p>
-  <p><b>Menu Manager</b></p>
-  <p><b>Portfolio</b></p>
+  <p class="fontBigBold">Menu Manager</p>
+  <p>This project is a content manager for restaurant menus.</p>
+  <!-- <div class="flex-for-carrousel">
+    <img class="carrousel" src="../images/Restaurant-menu.png" alt="" />
+    <img class="carrousel" src="../images/Secciones-menu.png" alt="" />
+    <img class="carrousel" src="../images/menu-front.png" alt="" />
+    <img class="carrousel" src="../images/elementos de seccion.png" alt="" />
+  </div> -->
+
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img src="../images/menu-front.png" alt="" />
+        <p class="fontMediumBold">Menu for restaurant customers</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="../images/Restaurant-menu.png" alt="" />
+        <p class="fontMediumBold">Admin dashboard - Restaurant secction</p>
+      </div>
+      t
+      <div class="swiper-slide">
+        <img src="../images/Secciones-menu.png" alt="" />
+        <p class="fontMediumBold">Admin dashboard - Secction</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="../images/elementos de seccion.png" alt="" />
+        <p class="fontMediumBold">Admin dashboard - plates secction</p>
+      </div>
+
+      ...
+    </div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+  <p><b>Features</b></p>
+  <ol>
+    <li>
+      <b>Admin dashboard</b><br />
+      The admin dashboard requires authentication and allows you to:
+      <ul>
+        <li>
+          Create one or more restaurant menus or edit the settings of an
+          existing restaurant menu
+        </li>
+        <li>
+          Add sections to your restaurant menu (with optional headers and
+          footers)
+        </li>
+        <li>Add plates to your sections</li>
+        <li>Pick a theme for your menu</li>
+      </ul>
+    </li>
+    <li>
+      <b>Menu for restaurant customers</b><br />
+      Allows any user (restaurant clients) to see the actual menu.
+    </li>
+  </ol>
+
+  <p><b>Technical details</b></p>
+  <p>Menu Manager consists of two projects:</p>
+  <ul>
+    <li>A backend in NodeJS with a PostgreSQL database</li>
+    <li>
+      A frontend in NextJs that serves both the admin dashboard and the menu
+      itself
+    </li>
+  </ul>
+  <p>Both are dockerized and can be run with docker-compose.</p>
+  <p>
+    <a href="dashboard-link" target="_blank">Link to Dashboard</a> (you will
+    need to authenticate, contact me so I can provide you with a user and
+    password)<br />
+    <a href="menu-link" target="_blank">Link to Menu</a> (no auth required,
+    please note that this has just basic styling, new themes can be created and
+    selected from the menu in the future)<br />
+    <a href="github-repo-link" target="_blank">Github repo</a> (contact me so I
+    can give you access to the repo, so you can check it's really me that did
+    it, prefer not to make it public for now)
+  </p>
+  <p class="fontBigBold">Portfolio</p>
   <button
     class="switch-page-button"
     data-target="skills-div"
