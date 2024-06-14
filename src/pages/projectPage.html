@@ -93,20 +93,20 @@
   <p><b>Menu Manager consists of two projects:</b></p>
   <ul class="left">
     <li>
-      A backend in NodeJS with a PostgreSQL database managed trough
-      sequelize
+      The backend is a Node.js Express server with a PostgreSQL database managed through Sequelize.
     </li>
     <li>
-      A frontend in NextJs that serves both the admin dashboard (client side
-      render) and the menu itself (server side render)
+      The frontend is a Next.js app. It serves both the admin dashboard (client-side render) and the menu itself (server-side render).
     </li>
-  </ul>
-  <p>Both are dockerized and can be run with docker-compose.</p>
-  <ul class="left">
     <li>
-      Login is managed trough AWS cognito, new user data is received troug
-      AWS lambda functions
+      Both front-end and back-end are dockerized and can be run with Docker Compose.
     </li>
+    <li>
+      The project is served with Nginx on an unmanaged Linode server.
+    </li>
+    <li>
+      Login is managed through AWS Cognito, and new user data is received through AWS Lambda functions.
+    </li>    
   </ul>
   <p class="fontMediumBold">Links.</p>
   <ul class="left">
@@ -128,8 +128,8 @@
         https://github.com/adrianosvaldomartinez/menu-manager-back</a>
     </li>
     <p>
-      (contact me so I can give you access to the repo, I prefered not to
-      make it public for now)
+      (contact me so I can give you access to the repo. I preferred not to make it public for now.)
+
     </p>
     <li class="underline">
       <a href="https://github.com/adrianosvaldomartinez/menu-manager-front" target="_blank">Github repo front-end:
@@ -137,12 +137,27 @@
       </a>
     </li>
     <p>
-      (contact me so I can give you access to the repo, i prefered not to
-      make it public for now)
+      (contact me so I can give you access to the repo. I preferred not to make it public for now.)
+
     </p>
   </ul>
   <div class="space"></div>
+  <hr class="divisory-line" />
   <p class="fontBigBold text-shadow underline">Portfolio</p>
+  <p class="fontMediumBold">Technical details.</p>
+  <p><b>You are seeing it right now!:</b></p>
+  <ul class="left">
+    <li>
+      This is a Node.js project. I decided to use this over vanilla JS so I could create several HTML files, divide the project into directories, and, in general, keep things more organized, but theres no framwork involved. (im not using Reactjs here.)
+    </li>
+    <li>
+      The project is bundled with Webpack. I'm using HtmlLoader to handle the HTML files.
+    </li>
+    <li>
+      The project is served with Nginx on an unmanaged Linode server.
+    </li>
+  </ul>
+  <div class="space"></div>
   <button class="switch-page-button" data-target="skills-div" data-js="switch-page">
     Skills.. ->
   </button>
