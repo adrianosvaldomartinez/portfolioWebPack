@@ -8,8 +8,13 @@
 }
 
 .swiper {
-  width: 70vw;
-  height: auto;
+  width: 290px;
+  height: 200px;
+}
+
+.menu-image {
+  height: 150px;
+  width: auto;
 }
 
 .centered {
@@ -64,4 +69,18 @@
 
 .skills-table tr:nth-child(even) {
   background-color: #f2f2f2;
+}
+
+@media (min-width: 900px) {
+  .swiper {
+    width: 870px;
+    height: 400px;
+  }
+  .swiper-slide {
+    height: 300px;
+  }
+  .menu-image {
+    height: 320px;
+    width: auto;
+  }
 }

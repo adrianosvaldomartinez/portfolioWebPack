@@ -60,22 +60,24 @@ document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.swiper', {
     // Optional parameters
     autoplay: {
-      delay: 3000,
+      delay: 8000,
     },
     direction: 'horizontal',
     loop: true,
 
     // If we need pagination
 
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
     // And if we need scrollbar
     scrollbar: {
       el: '.swiper-scrollbar',
+    },
+    zoom: {
+      maxRatio: 5,
+    },
+    mousewheel: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
     },
   });
 });
