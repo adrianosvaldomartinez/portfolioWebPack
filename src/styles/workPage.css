@@ -17,6 +17,14 @@
   text-align: center;
   width: 100%;
 }
+.left {
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+.underline {
+  text-decoration: underline;
+}
 
 .card {
   background: rgba(255, 255, 255, 0.3);

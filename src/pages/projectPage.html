@@ -4,14 +4,8 @@
     Since the projects I have worked on are not open source, I have built some
     projects to showcase my skills.
   </p>
-  <p class="fontBigBold">Menu Manager</p>
+  <p class="fontBigBold text-shadow underline">Menu Manager</p>
   <p>This project is a content manager for restaurant menus.</p>
-  <!-- <div class="flex-for-carrousel">
-    <img class="carrousel" src="../images/Restaurant-menu.png" alt="" />
-    <img class="carrousel" src="../images/Secciones-menu.png" alt="" />
-    <img class="carrousel" src="../images/menu-front.png" alt="" />
-    <img class="carrousel" src="../images/elementos de seccion.png" alt="" />
-  </div> -->
 
   <div class="swiper">
     <!-- Additional required wrapper -->
@@ -46,52 +40,102 @@
     <div class="swiper-scrollbar"></div>
   </div>
 
-  <p><b>Features</b></p>
-  <ol>
-    <li>
-      <b>Admin dashboard</b><br />
-      The admin dashboard requires authentication and allows you to:
-      <ul>
-        <li>
-          Create one or more restaurant menus or edit the settings of an
-          existing restaurant menu
-        </li>
-        <li>
-          Add sections to your restaurant menu (with optional headers and
-          footers)
-        </li>
-        <li>Add plates to your sections</li>
-        <li>Pick a theme for your menu</li>
-      </ul>
-    </li>
-    <li>
-      <b>Menu for restaurant customers</b><br />
-      Allows any user (restaurant clients) to see the actual menu.
-    </li>
-  </ol>
+  <p class="fontMediumBold">Features.</p>
 
-  <p><b>Technical details</b></p>
-  <p>Menu Manager consists of two projects:</p>
-  <ul>
-    <li>A backend in NodeJS with a PostgreSQL database</li>
+  <b>Admin dashboard</b>
+  The admin dashboard requires authentication and allows you to:
+  <ul class="left">
     <li>
-      A frontend in NextJs that serves both the admin dashboard and the menu
-      itself
+      Create one or more companies. Each company can have any number of
+      restaurant menus.
+    </li>
+    <li>
+      Each menu can have its own theme, allowing you to customize the look and
+      feel (pre-made themes).
+    </li>
+    <li>
+      Each time you create a new restaurant menu, a new URL and QR code are
+      generated for it, so customers can access the menu.
+    </li>
+    <li>
+      Each menu is subdivided into sections, and each section contains menu
+      items. Each menu item can have its own photo, description, and price tag.
+    </li>
+  </ul>
+  <b>Menu for restaurant customers</b>
+  <ul class="left">
+    <li>Allows any user (restaurant clients) to view the current menu.</li>
+    <li>
+      Some themes also allow for additional functionality (e.g., WhatsApp
+      button).
+    </li>
+  </ul>
+
+  <p class="fontMediumBold">Technical details.</p>
+  <p><b>Menu Manager consists of two projects:</b></p>
+  <ul class="left">
+    <li>
+      A backend in NodeJS with a PostgreSQL database managed trough sequelize
+    </li>
+    <li>
+      A frontend in NextJs that serves both the admin dashboard (client side
+      render) and the menu itself (server side render)
     </li>
   </ul>
   <p>Both are dockerized and can be run with docker-compose.</p>
-  <p>
-    <a href="dashboard-link" target="_blank">Link to Dashboard</a> (you will
-    need to authenticate, contact me so I can provide you with a user and
-    password)<br />
-    <a href="menu-link" target="_blank">Link to Menu</a> (no auth required,
-    please note that this has just basic styling, new themes can be created and
-    selected from the menu in the future)<br />
-    <a href="github-repo-link" target="_blank">Github repo</a> (contact me so I
-    can give you access to the repo, so you can check it's really me that did
-    it, prefer not to make it public for now)
-  </p>
-  <p class="fontBigBold">Portfolio</p>
+  <ul class="left">
+    <li>
+      Login is managed trough AWS cognito, new user data is received troug AWS
+      lambda functions
+    </li>
+  </ul>
+  <p class="fontMediumBold">Links.</p>
+  <ul class="left">
+    <li class="underline">
+      <a href="https://menu-manager.infoshared.org/" target="_blank"
+        >Link to Dashboard: https://menu-manager.infoshared.org/</a
+      >
+    </li>
+    <p>
+      (you will need to authenticate, contact me so I can provide you with a
+      user and password)<br />
+    </p>
+    <li class="underline">
+      <a
+        href="https://menu-manager.infoshared.org/restaurant_demo_2/menu"
+        target="_blank"
+        >Menu for customers:
+        https://menu-manager.infoshared.org/restaurant_demo_2/menu</a
+      >
+    </li>
+    <p>(Basic styling themes)</p>
+    <li class="underline">
+      <a
+        href="https://github.com/adrianosvaldomartinez/menu-manager-back"
+        target="_blank"
+        >Github repo back-end:
+        https://github.com/adrianosvaldomartinez/menu-manager-back</a
+      >
+    </li>
+    <p>
+      (contact me so I can give you access to the repo, I prefered not to make
+      it public for now)
+    </p>
+    <li class="underline">
+      <a
+        href="https://github.com/adrianosvaldomartinez/menu-manager-front"
+        target="_blank"
+        >Github repo front-end:
+        https://github.com/adrianosvaldomartinez/menu-manager-front
+      </a>
+    </li>
+    <p>
+      (contact me so I can give you access to the repo, i prefered not to make
+      it public for now)
+    </p>
+  </ul>
+  <div class="space"></div>
+  <p class="fontBigBold text-shadow underline">Portfolio</p>
   <button
     class="switch-page-button"
     data-target="skills-div"
