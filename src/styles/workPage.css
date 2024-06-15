@@ -5,11 +5,12 @@
   align-items: center;
   margin-top: 5%;
   text-align: center;
-  width: 80vw;
+  text-overflow: wrap;
+  width: 100%;
 }
 
 .swiper {
-  width: 70vw;
+  width: 290px;
   height: 200px;
 }
 
