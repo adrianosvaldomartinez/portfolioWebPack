@@ -14,11 +14,13 @@
       <div class="swiper-slide">
         <div class="swiper-zoom-container" data-swiper-zoom="2">
           <div>
-            <img src="../images/Restaurant-menu.png" alt="Admin dashboard - Restaurant section" />
+            <img
+              src="../images/Restaurant-menu.png"
+              alt="Admin dashboard - Restaurant section"
+            />
             <p class="fontMediumBold">Admin dashboard - Restaurant section</p>
           </div>
         </div>
-
       </div>
       <div class="swiper-slide">
         <div class="swiper-zoom-container" data-swiper-zoom="2">
@@ -27,7 +29,6 @@
             <p class="fontMediumBold">Admin dashboard - section</p>
           </div>
         </div>
-
       </div>
 
       <div class="swiper-slide">
@@ -37,7 +38,6 @@
             <p class="fontMediumBold">Admin dashboard - plates section</p>
           </div>
         </div>
-
       </div>
 
       <div class="swiper-slide">
@@ -47,15 +47,12 @@
             <p class="fontMediumBold">Menu for restaurant customers</p>
           </div>
         </div>
-
       </div>
     </div>
     <div class="swiper-pagination"></div>
     <!-- If we need scrollbar -->
     <div class="swiper-scrollbar"></div>
   </div>
-
-
 
   <p class="fontMediumBold">Features.</p>
 
@@ -67,8 +64,8 @@
       restaurant menus.
     </li>
     <li>
-      Each menu can have its own theme, allowing you to customize the look
-      and feel (pre-made themes).
+      Each menu can have its own theme, allowing you to customize the look and
+      feel (pre-made themes).
     </li>
     <li>
       Each time you create a new restaurant menu, a new URL and QR code are
@@ -76,8 +73,7 @@
     </li>
     <li>
       Each menu is subdivided into sections, and each section contains menu
-      items. Each menu item can have its own photo, description, and price
-      tag.
+      items. Each menu item can have its own photo, description, and price tag.
     </li>
   </ul>
   <b>Menu for restaurant customers</b>
@@ -93,52 +89,66 @@
   <p><b>Menu Manager consists of two projects:</b></p>
   <ul class="left">
     <li>
-      The backend is a Node.js Express server with a PostgreSQL database managed through Sequelize.
+      The backend is a Node.js Express server with a PostgreSQL database managed
+      through Sequelize.
     </li>
     <li>
-      The frontend is a Next.js app. It serves both the admin dashboard (client-side render) and the menu itself (server-side render).
+      The frontend is a Next.js app. It serves both the admin dashboard
+      (client-side render) and the menu itself (server-side render).
     </li>
     <li>
-      Both front-end and back-end are dockerized and can be run with Docker Compose.
+      Both front-end and back-end are dockerized and can be run with Docker
+      Compose.
     </li>
+    <li>The project is served with Nginx on an unmanaged Linode server.</li>
     <li>
-      The project is served with Nginx on an unmanaged Linode server.
+      Login is managed through AWS Cognito, and new user data is received
+      through AWS Lambda functions.
     </li>
-    <li>
-      Login is managed through AWS Cognito, and new user data is received through AWS Lambda functions.
-    </li>    
   </ul>
   <p class="fontMediumBold">Links.</p>
   <ul class="left">
     <li class="underline">
-      <a href="https://menu-manager.infoshared.org/" target="_blank">Link to Dashboard:
-        https://menu-manager.infoshared.org/</a>
+      <a href="https://menu-manager.infoshared.org/" target="_blank"
+        >Link to Dashboard: https://menu-manager.infoshared.org/</a
+      >
     </li>
     <p>
       (you will need to authenticate, contact me so I can provide you with a
       user and password)<br />
     </p>
     <li class="underline">
-      <a href="https://menu-manager.infoshared.org/restaurant_demo_2/menu" target="_blank">Menu for customers:
-        https://menu-manager.infoshared.org/restaurant_demo_2/menu</a>
+      <a
+        href="https://menu-manager.infoshared.org/restaurant_demo_2/menu"
+        target="_blank"
+        >Menu for customers:
+        https://menu-manager.infoshared.org/restaurant_demo_2/menu</a
+      >
     </li>
     <p>(Basic styling themes)</p>
     <li class="underline">
-      <a href="https://github.com/adrianosvaldomartinez/menu-manager-back" target="_blank">Github repo back-end:
-        https://github.com/adrianosvaldomartinez/menu-manager-back</a>
+      <a
+        href="https://github.com/adrianosvaldomartinez/menu-manager-back"
+        target="_blank"
+        >Github repo back-end:
+        https://github.com/adrianosvaldomartinez/menu-manager-back</a
+      >
     </li>
     <p>
-      (contact me so I can give you access to the repo. I preferred not to make it public for now.)
-
+      (contact me so I can give you access to the repo. I preferred not to make
+      it public for now.)
     </p>
     <li class="underline">
-      <a href="https://github.com/adrianosvaldomartinez/menu-manager-front" target="_blank">Github repo front-end:
+      <a
+        href="https://github.com/adrianosvaldomartinez/menu-manager-front"
+        target="_blank"
+        >Github repo front-end:
         https://github.com/adrianosvaldomartinez/menu-manager-front
       </a>
     </li>
     <p>
-      (contact me so I can give you access to the repo. I preferred not to make it public for now.)
-
+      (contact me so I can give you access to the repo. I preferred not to make
+      it public for now.)
     </p>
   </ul>
   <div class="space"></div>
@@ -148,26 +158,34 @@
   <p><b>You are seeing it right now!:</b></p>
   <ul class="left">
     <li>
-      This is a Node.js project. I decided to use this over vanilla JS so I could create several HTML files, divide the project into directories, and, in general, keep things more organized, but theres no framwork involved. (im not using Reactjs here.)
+      This is a Node.js project. I decided to use this over vanilla JS so I
+      could create several HTML files, divide the project into directories, and,
+      in general, keep things more organized, but theres no framwork involved.
+      (im not using Reactjs here.)
     </li>
     <li>
-      The project is bundled with Webpack. I'm using HtmlLoader to handle the HTML files.
+      The project is bundled with Webpack. I'm using HtmlLoader to handle the
+      HTML files.
     </li>
-    <li>
-      The project is served with Nginx on an unmanaged Linode server.
-    </li>
+    <li>The project is served with Nginx on an unmanaged Linode server.</li>
   </ul>
   <p class="fontMediumBold">Links.</p>
   <ul class="left">
     <li class="underline">
-      <a href="https://github.com/adrianosvaldomartinez/portfolioWebPack" target="_blank">Link to github repo:
-        https://github.com/adrianosvaldomartinez/portfolioWebPack</a>
+      <a
+        href="https://github.com/adrianosvaldomartinez/portfolioWebPack"
+        target="_blank"
+        >Link to github repo:
+        https://github.com/adrianosvaldomartinez/portfolioWebPack</a
+      >
     </li>
   </ul>
   <div class="space"></div>
-  <button class="switch-page-button" data-target="skills-div" data-js="switch-page">
+  <button
+    class="switch-page-button"
+    data-target="skills-div"
+    data-js="switch-page"
+  >
     Skills.. ->
   </button>
-</div>
-</div>
 </div>
