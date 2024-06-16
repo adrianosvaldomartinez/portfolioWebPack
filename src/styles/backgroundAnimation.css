@@ -15,8 +15,6 @@ body {
     #eef1f9 100%
   );
   background-size: 700%; */
-  background-image: linear-gradient(90deg, #eef1f9 69%, #8d8e93 100%);
-  background-size: 100%;
   animation-name: AnimationName;
   animation-duration: var(--animation-duration);
   animation-timing-function: ease;
@@ -24,7 +22,6 @@ body {
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-play-state: paused;
-  height: 100vh;
 }
 
 @keyframes AnimationName {

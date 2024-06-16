@@ -10,13 +10,15 @@
 }
 
 .swiper {
-  width: 290px;
-  height: 200px;
+  width: 300px;
 }
 
 .menu-image {
-  height: 150px;
+  height: 80%;
   width: auto;
+}
+.image-slider {
+  width: 100%;
 }
 
 .centered {

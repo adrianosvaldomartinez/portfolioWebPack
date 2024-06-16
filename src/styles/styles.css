@@ -10,25 +10,25 @@
 }
 
 body {
+  background-image: linear-gradient(90deg, #eef1f9 69%, #8d8e93 100%);
+  background-size: 100%;
+  height: 100vh;
   font-family: Roboto, sans-serif;
   font-size: 14px;
-  background: #f0f0f0;
   margin-top: 16px;
-  background-color: #eef1f9;
-  display: flex;
-  justify-content: center;
 }
 .layout {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100vw;
 }
 .page {
   display: grid;
   max-width: 600px;
-  min-width: 312px;
+  min-width: auto;
   width: 80vw;
   /* añadimos por que tenemso el footer fixed, de lo contrario tapa el contenido de page */
 }
