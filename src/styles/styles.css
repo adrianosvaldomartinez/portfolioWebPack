@@ -26,7 +26,6 @@ body {
   width: 100vw;
 }
 .page {
-  display: grid;
   max-width: 600px;
   min-width: auto;
   width: 80vw;
@@ -34,6 +33,7 @@ body {
 }
 
 .container-intro {
+  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
 }
