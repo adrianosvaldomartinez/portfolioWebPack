@@ -33,6 +33,10 @@
 .underline {
   text-decoration: underline;
 }
+a {
+  width: 100%;
+  word-wrap: break-word;
+}
 
 .card {
   background: rgba(255, 255, 255, 0.3);
